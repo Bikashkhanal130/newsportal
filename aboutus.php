@@ -13,8 +13,10 @@
     <h2>NewsPortal</h2>
 <nav>
             <a href="index.php">Home</a>
-            <a href="contactus.php">Contact</a>
             <a href="aboutus.php">About</a>
+            <a href="contactus.php">Contact</a>
+            <a href="login.php">Log in</a>
+            <a href="userregister.php">Register</a>
 </nav>
 </header>
  
