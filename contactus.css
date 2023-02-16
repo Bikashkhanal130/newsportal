@@ -22,3 +22,14 @@ header nav a{
     margin-right: 30px;
     font-weight: 500;
 }
+
+.contact{
+    text-align: center;
+    font-size:40px;
+    margin-top: 15px;
+}
+
+.contact p{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
