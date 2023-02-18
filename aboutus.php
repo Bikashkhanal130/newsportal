@@ -22,9 +22,10 @@
  
 <div class="about-section">
   <h1>About Us Page</h1>
+  <br>
   <p>Some text about who we are and what we do.</p>
 </div>
-
+<br>
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
   <div class="column">
