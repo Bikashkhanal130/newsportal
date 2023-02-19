@@ -20,7 +20,7 @@
             
 </nav>
 </header>
-<main><form action="submit-form.php" method="POST" class="registerFields">
+<main>
   <div class="form-group">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
@@ -41,12 +41,9 @@
     <input type="password" id="confirm-password" name="confirm-password" required>
   </div>
   
-  <button type="submit">Submit</button>
-</form></main>
-
-            
-    
-
+  <button type="submit"><a href="final.php">Register</a></button>
+</form>
+</main>
 </body>
 </html>
 
