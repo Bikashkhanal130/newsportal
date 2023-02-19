@@ -31,7 +31,7 @@ form {
 
 .form-group {
   margin-bottom: 20px;
-  width: 300px;
+  width: 400px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -69,3 +69,14 @@ button:hover {
   background-color: #0069d9;
   
 }
+
+.registerFields {
+text-align: center;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+

@@ -20,33 +20,42 @@
             
 </nav>
 </header>
-<main><form action="submit-form.php" method="POST" class="registerFields">
+<main>
+<div class="contain">
   <div class="form-group">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="Username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="Username" id="Username" required>
   </div>
   
   <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
   </div>
   
   <div class="form-group">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+  <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
   </div>
   
   <div class="form-group">
-    <label for="confirm-password">Confirm Password:</label>
-    <input type="password" id="confirm-password" name="confirm-password" required>
+  <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
   </div>
-  
-  <button type="submit">Submit</button>
-</form></main>
 
-            
-    
+  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  <div class="form-group">
+    <br>
+  <button type="submit"><a href="final.php">Register</a></button>
+</div>
+ 
+<div class="signin">
+<p>Already have an account? <a href="login.php">Sign in</a>.</p>
+</div>
 
+</form>
+</main>
+</div>
 </body>
 </html>
 

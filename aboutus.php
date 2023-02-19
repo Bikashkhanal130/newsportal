@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
-<form action="action_page.php" method="post">
     <header>
     <h2>NewsPortal</h2>
 <nav>
@@ -36,7 +35,8 @@
         <p class="title">Designer</p>
         <p>Digital Creator.</p>
         <p>khanalbk18@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <br>
+        <p><button class="button"><a href="https://www.facebook.com/khanal.Jrbikash">Contact</a></button></p>
       </div>
     </div>
   </div>
@@ -48,7 +48,8 @@
         <p class="title">Designer</p>
         <p>Digital Creator.</p>
         <p>adhikari0015@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <br>
+        <p><button class="button"><a href="https://www.facebook.com/samir.adhikari.3382">Contact</a></button></p>
       </div>
     </div>
   </div>
@@ -60,7 +61,8 @@
         <p class="title">Designer</p>
         <p>Digital Creator.</p>
         <p>raaz44174@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <br>
+        <p><button class="button"><a href="https://www.facebook.com/raaz458">Contact</a></button></p>
       </div>
     </div>
   </div>
@@ -72,7 +74,8 @@
         <p class="title">Designer</p>
         <p>Digital Creator.</p>
         <p>Prabinj3210@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <br>
+        <p><button class="button"><a href="https://www.facebook.com/prabin.shrestha.58118774">Contact</a></button></p>
       </div>
     </div>
   </div>
@@ -80,11 +83,12 @@
   <div class="column">
     <div class="card">
       <div class="container">
-        <h2>Ujwal Shrestha (Best Friend) </h2>
+        <h2>Ujwal Shrestha</h2>
         <p class="title">Designer</p>
         <p>Enterpreneur.</p>
         <p>itsujwal@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <br>
+        <p><button class="button"><a href="https://www.facebook.com/me.Samir.shrestha">Contact</a></button></p>
       </div>
     </div>
   </div>

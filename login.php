@@ -32,12 +32,16 @@
   <br>
   <br>
   <button type="submit"><a href="forgotpassword.php">Forgot password?</a></button>
+  <br>
+  <br>
 
-  
+  <div class="signUp">
+<p>Dont have an account? <a href="userregister.php">Register</a>.</p>
+</div>
+
 </form></main>
 
-            
-    
+
 
 </body>
 </html>
