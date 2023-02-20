@@ -1,3 +1,30 @@
+<?php
+session_start();
+include("db.php");
+$msg="";
+
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password =$_POST['password'];
+    $_SESSION['username'] = $username;
+    $sql = "SELECT id, email,username, password FROM tbl_admin WHERE email = '$email' AND password = '$password'";
+    $result = $conn->query($sql);
+
+    $row = $result->fetch_assoc();
+    
+
+    if ($result->num_rows == 1) {
+        $_SESSION['USER_ID']=$row['id'];
+        $_SESSION['email'] = $row['email'];      
+        header('Location:index.php');
+    } else {
+        
+        $msg="Please enter Valid Details!";
+        
+        
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
