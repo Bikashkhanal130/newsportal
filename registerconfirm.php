@@ -44,7 +44,7 @@ if (isset($_POST['login'])) {
             <p>Your details has been successfully submitted. </p>
             <br>
                <p> Thanks!</p>
-            <button type="submit" class="btn">Submit<a href="index.php"></a></button>
+            <button type="submit" class="btn"><a href="index.php">Submit</a></button>
 
         </div>
     </div>

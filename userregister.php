@@ -1,18 +1,18 @@
 <?php
 include('db.php');
-if(isset($_POST['submit'])) {
+if(isset($_POST['register'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password=$_POST['password'];
 
-    $insert = "INSERT INTO admin(username,email,password) 
+    $insert = "INSERT INTO tbl_admin(username,email,password) 
     VALUES ('$username','$email','$password')";
     $result = $conn->query($insert);
     if($conn->insert_id){
-        header('location:login.php');
+        header('Location:registerconfirm.php');
     }else{
         echo $conn->error;
-        header('location:userregister.php');
+        header('Location:userregister.php');
     }  
     
 }
@@ -37,14 +37,14 @@ if(isset($_POST['submit'])) {
                 </header>
                 <main class="row row-main">
                     <div class="col col-main">
-                        <input class="user-name" type="text" placeholder="Username" name="username" title="What's your username?"/><br/>
-                        <input class="Email" type="email" placeholder="Enter your Email" name="email" title="Enter your email ID"/><br/>
-                        <input class="Password" type="password" placeholder="New password" name="password" title="Password must be 8 character long"/><br/>
+                        <input class="user-name" type="text" placeholder="Username" name="username" title="What's your username?" required/><br/>
+                        <input class="Email" type="email" placeholder="Enter your Email" name="email" title="Enter your email ID" required/><br/>
+                        <input class="Password" type="password" placeholder="New password" name="password" title="Password must be 8 character long"required/><br/>
                     </div>
                 </main>
                 <footer class="row signup-btn">
                     <div class="col">
-                        <button type="submit" name="submit" class="signing-up">Register</button>
+                    <button type="submit" name="submit"><a href="registerconfirm.php">Register</a></button>
                     </div>
                 </footer>
             </form>
