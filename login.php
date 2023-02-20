@@ -1,47 +1,77 @@
+<?php
+session_start();
+include("db.php");
+$msg="";
+
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password =$_POST['password'];
+    $_SESSION['username'] = $username;
+    $sql = "SELECT id, email,username, password FROM tbl_admin WHERE email = '$email' AND password = '$password'";
+    $result = $conn->query($sql);
+
+    $row = $result->fetch_assoc();
+    
+
+    if ($result->num_rows == 1) {
+        $_SESSION['USER_ID']=$row['id'];
+        $_SESSION['email'] = $row['email'];      
+        header('Location:index.php');
+    } else {
+        
+        $msg="Please enter Valid Details!";
+        
+        
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
     <link rel="stylesheet" href="login.css">
+    <title>NewsPortal - log in or sign up</title>
 </head>
-<body>
-    <header>
-    <h2>NewsPortal</h2>
-<nav>
-            <a href="index.php">Home</a>
-            <a href="aboutus.php">About</a>
-            <a href="contactus.php">Contact</a>
-            <a href="login.php">Log in</a>
-            <a href="userregister.php">Register</a>          
-</header>
-<main><form action="loginuser.php" method="POST" class="registerFields">
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  
-  <div class="form-group">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-  </div>
-  
-  <button type="submit"><a href="loginuser.php">Log In</a></button>
-  <br>
-  <br>
-  <button type="submit"><a href="forgotpassword.php">Forgot password?</a></button>
-  <br>
-  <br>
-
-  <div class="signUp">
-<p>Dont have an account? <a href="userregister.php">Register</a>.</p>
-</div>
-
-</form></main>
-
-
-
+<body><div class="container">
+            <form action="loginuser.php" method="post" class="user-login">
+                <header class="row head">
+                    <div class="col">
+                        <h1 class="sign-up">Log In</h1>
+                        <!-- <p class="discript">It's quick and easy.</p> -->
+                    </div>
+    <main>
+        <!-- <div class="container-fluid content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 harry">
+                    </div>
+   -->
+                            <div class="row username">
+                                <div class="col">
+                                        <label for="email" class="email">E-mail*</label><br/>
+                                        <input type="email" id="email" name="email" class="input-email" title="Enter your e-mail" required/>
+                                </div>
+                            </div>
+                            <div class="row password">
+                                <div class="col">
+                                    <label for="password" class="pass">Password*</label><br/>
+                                    <input type="password" id="password" name="password" class="input-pass" title="Enter your password" required/>
+                                </div>
+                            </div>
+                            <div class="row login-btn">
+                                <div class="col">
+                                 <form action="loginuser.php" method="post">
+                                 <button type="submit"><u><a href="loginuser.php"></a></u>Login</button>
+                        </form>   
+                               
+                                    <p class="forgot"><u><a href="forgotpassword.php">Forgot your password?</a></u></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
