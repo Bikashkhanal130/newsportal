@@ -32,18 +32,24 @@ if (isset($_POST['login'])) {
     <link rel="stylesheet" href="login.css">
     <title>NewsPortal - log in or sign up</title>
 </head>
-<body>
+<body><div class="container">
+            <form action="loginuser.php" method="post" class="user-login">
+                <header class="row head">
+                    <div class="col">
+                        <h1 class="sign-up">Log In</h1>
+                        <!-- <p class="discript">It's quick and easy.</p> -->
+                    </div>
     <main>
-        <div class="container-fluid content">
+        <!-- <div class="container-fluid content">
             <div class="container">
                 <div class="row">
                     <div class="col-6 harry">
                     </div>
-  
+   -->
                             <div class="row username">
                                 <div class="col">
-                                        <label for="username" class="email">E-mail*</label><br/>
-                                        <input type="email" id="useremail" name="email" class="input-email" title="Enter your e-mail" required/>
+                                        <label for="email" class="email">E-mail*</label><br/>
+                                        <input type="email" id="email" name="email" class="input-email" title="Enter your e-mail" required/>
                                 </div>
                             </div>
                             <div class="row password">
