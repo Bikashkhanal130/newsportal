@@ -32,7 +32,6 @@ if(isset($_POST['register'])) {
                 <header class="row head">
                     <div class="col">
                         <h1 class="sign-up">Sign Up</h1>
-                        <p class="discript">It's quick and easy.</p>
                     </div>
                 </header>
                 <main class="row row-main">
@@ -44,7 +43,7 @@ if(isset($_POST['register'])) {
                 </main>
                 <footer class="row signup-btn">
                     <div class="col">
-                    <button type="submit" name="submit"><a href="registerconfirm.php">Register</a></button>
+                    <button type="submit" name="submit">Register</a></button>
                     </div>
                 </footer>
             </form>
