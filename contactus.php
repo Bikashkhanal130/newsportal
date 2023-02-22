@@ -20,12 +20,10 @@ if (isset($_POST['login'])) {
     } else {
         
         $msg="Please enter Valid Details!";
-        
-        
+    
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

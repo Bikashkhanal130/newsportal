@@ -44,7 +44,7 @@ if (isset($_POST['login'])) {
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
+      <i class='bx bxl-n-plus-plus'></i>
       <span class="logo_name">News Portal</span>
     </div>
       <ul class="nav-links">
@@ -55,43 +55,35 @@ if (isset($_POST['login'])) {
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="posts.php">
+          <i class="fa-solid fa-newspaper"></i>
+            <span class="links_name">Posts(News)</span>
+          </a>
+        </li>
+		
+		<li>
+          <a href="category.php">
 		  <i class='bx bx-user' ></i>
-            <span class="links_name">Admin</span>
+            <span class="links_name">Category</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="sub-category.php">
 		  <i class='bx bx-user' ></i>
-            <span class="links_name">Sub-admin</span>
+            <span class="links_name">Sub-Category</span>
           </a>
         </li>
         <li>
 			
-		<a href="#">
+		<a href="comments.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Comments</span>
           </a>
         </li>
+        
         <li>
 
-		<a href="#">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-
-          <a href="#">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Contact Us</span>
-          </a>
-        </li>
-        <li>
-
-
-
-		<a href="#">
+		<a href="About Us.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">About US</span>
           </a>
@@ -99,7 +91,7 @@ if (isset($_POST['login'])) {
         <li>
 
         <li class="log_out">
-          <a href="#">
+          <a href="logout.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
@@ -117,7 +109,6 @@ if (isset($_POST['login'])) {
         <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
-        <!--<img src="images/profile.jpg" alt="">-->
         <span class="admin_name">BIKASH KHANAL</span>
         <i class='bx bx-chevron-down' ></i>
       </div>
